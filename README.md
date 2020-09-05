@@ -2,7 +2,13 @@
 
 ## Overview
 
-🏀 An Android app to calculate your vertical jump by setting the take off time and landing time.
+🏀 An Android app to calculate your vertical jump by setting the take off time and landing time. This is the older version of the app that is currently in the google play store and the app store for the ios. 
+
+Google Play Store:
+https://play.google.com/store/apps/details?id=com.vertvision.verticaljump&hl=en_CA
+
+App Store:
+https://apps.apple.com/ca/app/vertvision/id1522416613?ign-mpt=uo%3D2
 
 ## Installation
 
