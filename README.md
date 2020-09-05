@@ -15,13 +15,13 @@
 ### 2. Load video.
 
 ### 3. Set Take off Time
-<img src="images/22140033_2232702583622906_935081714_o.png" width="263" height="512">
+<img src="images/image1.png" width="263" height="512">
 
 ### 4. Set Landing Time
-<img src="images/22139852_2232702590289572_673294951_o.png" width="263" height="512">
+<img src="images/image2.png" width="263" height="512">
 
 ### 5. Calculate the Vertical
-<img src="images/22163744_2232702613622903_1346424875_o.png" width="263" height="512">
+<img src="images/image3.png" width="263" height="512">
 
 
 ## Comments
