@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp" />
+
+    <TextView
+        android:id="@+id/end_text"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/start_text"
+        android:layout_marginStart="222dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/startTime"
+        android:layout_alignTop="@+id/hang_time"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/end_text"
+        android:layout_alignEnd="@+id/end_text"
+        android:gravity="center"
+        android:text="End Time"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hang_time"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:gravity="center"
+        android:text="Start Time"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/hang_time"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/HangTime"
+        android:layout_marginStart="31dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/HangTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/videoView"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="Hang Time"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/calculate"-->
+        <!--android:layout_width="235dp"-->
+        <!--android:layout_height="33dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:src="@drawable/id_play"-->
+        <!--android:text="Calculate" />-->
+
+    <Button
+        android:id="@+id/btn_play_pause"
+        android:layout_width="132dp"
+        android:layout_height="26dp"
+        android:layout_alignBottom="@+id/end_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="137dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/id_play"
+        android:text="Gallery"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/set_start_time"
+        android:layout_width="178dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:text="Set Takeoff"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/set_end_time"
+        android:layout_width="178dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:text="Set Landing"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="107dp"
+        android:text="Your Vertical Jump Height:" />
+
+    <TextView
+        android:id="@+id/vertical"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/answer"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="-107dp"
+        android:gravity="center"
+        android:text="0''"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/nextframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/videoView"
+        android:text="Next Frame"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="135dp" />
+
+    <TextView
+        android:id="@+id/unit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_play_pause"
+        android:layout_alignTop="@+id/spinner2"
+        android:text="Units"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-82dp"
+        android:layout_marginEnd="30dp"
+        android:text="Slow Mo" />
+
+</RelativeLayout>

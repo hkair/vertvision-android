@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">VerticalJump</string>
+
+    <string name="title_home">Vert Calc</string>
+    <string name="title_help">Help</string>
+
+    <string-array name="speed">
+        <item>1x</item>
+        <item>2x</item>
+        <item>4x</item>
+        <item>8x</item>
+        <item>16x</item>
+    </string-array>
+
+    <string-array name="units">
+        <item>Meter</item>
+        <item>CentiMeter</item>
+        <item>Inches</item>
+        <item>Feet</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="vert_calc">
+
+    <TextView
+        android:id="@+id/unit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="161dp"
+        android:layout_toEndOf="@+id/hang_time"
+        android:text="Units"
+        android:textSize="18sp" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="245dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:id="@+id/end_text"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/endTime"
+        android:layout_below="@+id/startTime"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/startTime"
+        android:layout_below="@+id/startTime"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hang_time"
+        android:layout_alignEnd="@+id/set_start_time"
+        android:gravity="center"
+        android:text="Start Time"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/set_end_time"
+        android:layout_alignTop="@+id/startTime"
+        android:gravity="center"
+        android:text="End Time"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/hang_time"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HangTime"
+        android:layout_toStartOf="@+id/vertical"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/HangTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/videoView"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="Hang Time"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/calculate"-->
+        <!--android:layout_width="134dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="71dp"-->
+        <!--android:layout_marginStart="29dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:src="@drawable/id_play"-->
+        <!--android:text="Calculate" />-->
+
+    <Button
+        android:id="@+id/btn_play_pause"
+        android:layout_width="132dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/id_play"
+        android:text="Gallery"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/set_start_time"
+        android:layout_width="178dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/videoView"
+        android:background="@color/colorPrimary"
+        android:text="Set Takeoff"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/set_end_time"
+        android:layout_width="178dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/videoView"
+        android:background="@color/colorPrimary"
+        android:text="Set Landing"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vertical"
+        android:layout_centerHorizontal="true"
+        android:text="Your Vertical Jump Height:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/vertical"
+        android:layout_width="186dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:gravity="center"
+        android:text='0"'
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/nextframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/videoView"
+        android:text="Next Frame"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_play_pause"
+        android:layout_toEndOf="@+id/HangTime" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/unit_text"
+        android:layout_marginEnd="78dp" />
+
+    <TextView
+        android:id="@+id/slowmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hang_time"
+        android:layout_alignTop="@+id/btn_play_pause"
+        android:text="Slow Mo"
+        android:textSize="18sp" />
+
+</RelativeLayout>
